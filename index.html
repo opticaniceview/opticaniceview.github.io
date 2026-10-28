@@ -142,10 +142,12 @@ header .btn{min-height:40px;padding:9px 18px;font-size:.68rem}
 /* featured (lens types) */
 .feat{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,2vw,24px);align-items:center}
 @media (max-width:760px){.feat{grid-template-columns:minmax(0,1fr)}}
-.fcard{padding:clamp(28px,3vw,40px) 24px;display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center;min-height:400px;justify-content:center;background:linear-gradient(180deg,#1b1b1d 0%,#070707 100%)}
+.fcard{padding:clamp(20px,2.4vw,30px) 14px clamp(28px,3vw,40px);display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center;min-height:400px;justify-content:center;background:linear-gradient(180deg,#1b1b1d 0%,#070707 100%)}
 .fcard.lit{min-height:460px}
 @media (max-width:760px){.fcard,.fcard.lit{min-height:0}}
-.fcard svg{width:min(190px,70%);height:auto}
+.lensfig{position:relative;width:100%;margin:0}
+.lensfig img{display:block;width:100%;height:auto}
+.zl{position:absolute;left:50%;transform:translate(-50%,-50%);font-size:.6rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:#fff;padding:5px 11px;border-radius:999px;background:rgba(8,10,14,.55);box-shadow:inset 0 0 0 1px rgba(255,255,255,.35);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);white-space:nowrap}
 .fcard h3{font-size:1.6rem}
 .fcard p{color:var(--mute);font-size:.88rem;max-width:24ch}
 .extras{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:clamp(28px,3vw,40px)}
@@ -325,17 +327,17 @@ footer.band{background:linear-gradient(180deg,#141416,#050505);border-top:1px so
       </div>
       <div class="feat">
         <article class="glass fcard">
-          <svg viewBox="0 0 200 150"><ellipse cx="100" cy="75" rx="88" ry="64" fill="#2a2a2d"/><ellipse cx="100" cy="75" rx="88" ry="64" fill="none" stroke="#d9d9de" stroke-width="3"/><text x="100" y="80" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="11" letter-spacing="2" fill="#bdbdc2">LEJOS O CERCA</text></svg>
+          <figure class="lensfig"><img src="img/lente-monofocal.webp" width="653" height="453" loading="lazy" alt="Lente monofocal: todo el cristal con la misma graduación"><span class="zl" style="top:21%">Una sola distancia</span></figure>
           <h3>Monofocal</h3><p>Una sola graduación, para lejos o para leer.</p>
         </article>
         <article class="glass lit fcard">
-          <svg viewBox="0 0 200 150"><defs><clipPath id="l3"><ellipse cx="100" cy="75" rx="88" ry="64"/></clipPath><linearGradient id="g3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3a3d"/><stop offset=".5" stop-color="#8a8a90"/><stop offset="1" stop-color="#f2f2f4"/></linearGradient></defs><ellipse cx="100" cy="75" rx="88" ry="64" fill="#2a2a2d"/><g clip-path="url(#l3)"><path d="M60 0h80v60c-8 10-14 22-14 40v50H74v-50c0-18-6-30-14-40Z" fill="url(#g3)"/></g><ellipse cx="100" cy="75" rx="88" ry="64" fill="none" stroke="#ffffff" stroke-width="3"/><text x="100" y="32" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="10" letter-spacing="2" fill="#e6e6e9">LEJOS</text><text x="100" y="80" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="10" letter-spacing="2" fill="#111">MEDIO</text><text x="100" y="124" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="10" letter-spacing="2" fill="#111">CERCA</text></svg>
-          <h3 class="metal">Progresivo</h3><p>Lejos, medio y cerca en un solo lente, sin línea visible.</p>
+          <figure class="lensfig"><img src="img/lente-progresivo.webp" width="653" height="453" loading="lazy" alt="Lente progresivo: lejos arriba, intermedio en el centro y cerca abajo"><span class="zl" style="top:21%">Lejos</span><span class="zl" style="top:50%">Intermedio</span><span class="zl" style="top:79%">Cerca</span></figure>
+          <h3 class="metal">Progresivo</h3><p>Lejos, intermedio y cerca en un solo lente, sin línea visible.</p>
           <a class="btn chrome" href="https://wa.me/18498068834?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20lentes%20progresivos" target="_blank" rel="noopener">Preguntar</a>
         </article>
         <article class="glass fcard">
-          <svg viewBox="0 0 200 150"><defs><clipPath id="l2"><ellipse cx="100" cy="75" rx="88" ry="64"/></clipPath></defs><ellipse cx="100" cy="75" rx="88" ry="64" fill="#2a2a2d"/><g clip-path="url(#l2)"><path d="M62 104c0-14 17-24 38-24s38 10 38 24v40H62Z" fill="#bdbdc2"/></g><ellipse cx="100" cy="75" rx="88" ry="64" fill="none" stroke="#d9d9de" stroke-width="3"/><text x="100" y="56" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="11" letter-spacing="2" fill="#bdbdc2">LEJOS</text><text x="100" y="114" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="11" letter-spacing="2" fill="#111">CERCA</text></svg>
-          <h3>Bifocal</h3><p>Lejos arriba y una ventanita abajo para leer.</p>
+          <figure class="lensfig"><img src="img/lente-bifocal.webp" width="653" height="453" loading="lazy" alt="Lente bifocal: lejos arriba y una ventana para leer abajo"><span class="zl" style="top:21%">Lejos</span><span class="zl" style="top:79%">Cerca</span></figure>
+          <h3>Bifocal</h3><p>Lejos arriba y cerca abajo, en una ventanita con línea.</p>
         </article>
       </div>
       <div class="extras"><span>Antirreflejo</span><span>Filtro de luz azul</span><span>Fotocromático</span></div>
